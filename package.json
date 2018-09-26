@@ -1,0 +1,33 @@
+{
+  "name": "reason-javascript-30",
+  "version": "1.0.0",
+  "description": "My Solutions to the #JavaScript30 Challenge written in Reason",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "bs-platform": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutyel/reason-javascript-30.git"
+  },
+  "keywords": [
+    "javascript30",
+    "reason",
+    "reasonml"
+  ],
+  "author": "kutyel <flaviocorpa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kutyel/reason-javascript-30/issues"
+  },
+  "homepage": "https://github.com/kutyel/reason-javascript-30#readme"
+}

@@ -1,0 +1,11 @@
+####{BSB GENERATED: NO EDIT
+B lib/bs
+FLG -open ReasonJavascript30
+FLG -ppx /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-platform/lib/bsppx.exe
+S /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-platform/lib/ocaml
+B /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-platform/lib/ocaml
+FLG -nostdlib -color always
+FLG -w -30-40+6+7+27+32..39+44+45+101
+S src/01 - JavaScript Drum Kit
+B lib/bs/src/01 - JavaScript Drum Kit
+####BSB GENERATED: NO EDIT}
