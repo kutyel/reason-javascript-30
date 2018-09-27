@@ -1,24 +1,27 @@
 open Webapi.Dom;
 
-let playSound = ({keyCode}) => {
-  let audio = Document.querySelector({j|audio[data-key="$keyCode"]|j});
-  let key = Document.querySelector({j|.key[data-key="$keyCode"]|j});
-  if (audio) {
+let playSound = e => {
+  let keyCode = KeyboardEvent.code(e);
+  let audio =
+    document |> Document.querySelector({j|audio[data-key="$keyCode"]|j});
+  let key =
+    document |> Document.querySelector({j|.key[data-key="$keyCode"]|j});
+  switch (audio, key) {
+  | (Some(audio), Some(key)) =>
     audio.currentTime = 0;
     audio.play();
     key.classList.add("playing");
+  | (_, _) => ()
   };
 };
 
 let removePlayingClass = e =>
-  if (e.propertyName === "transform") {
-    e.target.classList.remove("playing");
-  };
+  e.propertyName === "transform" && e.target.classList.remove("playing");
 
-let keys = Document.querySelectorAll(".key");
+let keys = document |> Document.querySelectorAll(".key");
 
 keys.forEach(key =>
   key.addEventListener("transitionend", removePlayingClass)
 );
 
-Window.addEventListener("keydown", playSound);
+Window.addKeyDownEventListener(playSound, window);
