@@ -6,6 +6,8 @@ S /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-platform/lib/ocaml
 B /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-platform/lib/ocaml
 FLG -nostdlib -color always
 FLG -w -30-40+6+7+27+32..39+44+45+101
-S src/01 - JavaScript Drum Kit
-B lib/bs/src/01 - JavaScript Drum Kit
+S /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-webapi/lib/ocaml
+B /Users/flaviocorpa/Dev/reason-javascript-30/node_modules/bs-webapi/lib/ocaml
+S src/01_JavaScript_Drum_Kit
+B lib/bs/src/01_JavaScript_Drum_Kit
 ####BSB GENERATED: NO EDIT}

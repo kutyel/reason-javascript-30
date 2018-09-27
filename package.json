@@ -7,7 +7,8 @@
     "lib": "lib"
   },
   "dependencies": {
-    "bs-platform": "^4.0.5"
+    "bs-platform": "^4.0.5",
+    "bs-webapi": "^0.12.2"
   },
   "devDependencies": {},
   "scripts": {
